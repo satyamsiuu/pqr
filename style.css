@@ -71,18 +71,10 @@ div.letter-wrapper {
   border-radius: 1em;
   position: relative;
   padding: 1em 2em;
-  overflow: hidden;
+  overflow: hidden; /* Prevents overflow from showing outside */
   margin-top: 2em;
   margin-bottom: 2em;
   height: 300px; /* Set a fixed height for the letter */
-}
-
-.letter:nth-of-type(odd) {
-  background-color: rgba(232, 133, 135, .5);
-}
-
-.letter:nth-of-type(even) {
-  background-color: rgba(214, 183, 232, .5);
 }
 
 .letter.active {
@@ -102,7 +94,8 @@ div.letter-wrapper {
 .body {
   font-size: 1em;
   max-height: 250px; /* Set a max height for the body */
-  overflow-y: auto; /* Enable vertical scrolling */
+  overflow-y: auto; /* Enable vertical scrolling within the letter */
+  overflow-x: hidden; /* Prevent horizontal overflow */
 }
 
 .writer {
@@ -156,4 +149,7 @@ div.letter-wrapper {
             transform: rotate(45deg) scale(2,2);
     -webkit-transform-origin: 100% 100%;
        -moz-transform-origin: 100% 100%;
-        -ms-transform-origin: 100% 100
+        -ms-transform-origin: 100% 100%;
+         -o-transform-origin: 100% 100%;
+            transform-origin :100% 100%;
+}
