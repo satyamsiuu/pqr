@@ -1,41 +1,21 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CSS Envelope + Letter (Open/Close on Click)</title>
-    <link rel="stylesheet" href="./style.css">
-</head>
-<body>
-    <div class="container">
-        <div class="envelope-wrapper">
-            <div class="envelope">
-                <div class="letter">
-                    <div class="text">
-                        <strong>Dear Bhumika,</strong>
-                        <p>
-                            10 months huh, it's been a long time since the day we came together after being silly and acting childish, ignorant 
-                            and unware about our love for each other but finally on 10th Feb, we came together when the whole wolrd was trying to 
-                            put us together , no matter how much we tried to run away from each other at the end it was our destiny to be one with each other.
-                            I always loved you for your innocence which came from your childishness and your oppenness towards me. It took no time for me 
-                            to fell deeper and deeper for you, the way you laughed, the way you talked and the way you expressed your thoughts were literally everything 
-                            for me. Sooner we did have our lovely time together in which we loved each other in every way possible. The person you were was literally 
-                            like the character of geet and I was your aditya kashyap, a person who was devoid of feelings and was just living life like a black 
-                            and white tv serial as it was going on until out of nowhere my geet came into my life the chatterbox which never stopped talking and always 
-                            had something to talk, full of feeling which always felt every feeling to her fullest, the most amazing person I ever met in my life.
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="heart"></div>
-        </div>
-    </div>
-    <script>
-        const envelope = document.querySelector('.envelope-wrapper');
-        envelope.addEventListener('click', () => {
-            envelope.classList.toggle('flap');
-        });
-    </script>
-</body>
-</html>
+<div class="valentines-day-card">
+  <input id="open" type="checkbox">
+  <label class="open" for="open"></label>
+  
+  <div class="card-front">
+    <div class="note">Click to Open</div>
+  </div>
+  
+  <div class="card-inside">
+    <div class="page page-1">Happy Valentine's Day!</div>
+    <div class="page page-2">You make my heart smile!</div>
+    <div class="page page-3">Love is in the air!</div>
+    <div class="page page-4">You are my sunshine!</div>
+    <div class="page page-5">Together is a wonderful place to be!</div>
+    <div class="page page-6">You are the peanut butter to my jelly!</div>
+    <div class="page page-7">You make every day feel like a fairytale!</div>
+    <div class="page page-8">You are my favorite distraction!</div>
+    <div class="page page-9">I love you to the moon and back!</div>
+    <div class="page page-10">Forever and always!</div>
+  </div>
+</div>
