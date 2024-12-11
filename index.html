@@ -2,72 +2,33 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Love Letter</title>
-    <style>
-        body {
-            font-family: 'Georgia', serif;
-            background-image: url('https://www.example.com/your-background-image.jpg'); /* Replace with your image URL */
-            background-size: cover;
-            background-position: center;
-            color: #333;
-            margin: 0;
-            padding: 20px;
-        }
-        .letter {
-            max-width: 600px;
-            margin: auto;
-            padding: 30px;
-            background-color: rgba(255, 255, 255, 0.9);
-            border: 1px solid #ddd;
-            border-radius: 15px;
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
-            text-align: center;
-        }
-        h1 {
-            color: #e74c3c;
-            font-size: 2.5em;
-            margin-bottom: 20px;
-        }
-        p {
-            line-height: 1.8;
-            font-size: 1.2em;
-            margin: 15px 0;
-        }
-        .signature {
-            margin-top: 40px;
-            font-style: italic;
-            font-size: 1.5em;
-            color: #e74c3c;
-        }
-        .heart {
-            color: #e74c3c;
-            font-size: 2em;
-        }
-    </style>
+    <title>CSS Envelope + Letter (Open/Close on Click)</title>
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-
-<div class="letter">
-    <h1>My Dearest [Her Name]</h1>
-    <p class="heart">❤️</p>
-    <p>
-        From the moment I met you, my life has been filled with joy and love. You have a way of making even the simplest moments feel extraordinary. Your laughter is like music to my ears, and your smile lights up my darkest days.
-    </p>
-    <p>
-        I cherish every moment we spend together, whether we are going on adventures or simply enjoying each other's company in silence. You inspire me to be a better person, and I am so grateful for your love and support.
-    </p>
-    <p>
-        I want you to know that you are my everything. I promise to stand by your side, to support you in your dreams, and to love you unconditionally. Together, I believe we can conquer anything that life throws our way.
-    </p>
-    <p>
-        Thank you for being you, for being my partner, and for filling my life with so much happiness. I look forward to creating countless more memories with you.
-    </p>
-    <p class="signature">
-        With all my love,<br>
-        [Your Name]
-    </p>
-</div>
-
+    <div class="container">
+        <div class="envelope-wrapper">
+            <div class="envelope">
+                <div class="letter">
+                    <div class="text">
+                        <strong>Dear Person.</strong>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Numquam labore omnis minus maiores laboriosam, facere in beatae esse. 
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="heart"></div>
+        </div>
+    </div>
+    <script>
+        const envelope = document.querySelector('.envelope-wrapper');
+        envelope.addEventListener('click', () => {
+            envelope.classList.toggle('flap');
+        });
+    </script>
 </body>
 </html>
